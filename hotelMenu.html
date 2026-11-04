@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="revision2.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    .heading{
+        display:flex;
+        justify-content:center;
+    }
+    div{
+        margin:2px;
+        padding:10px;
+    }
+    table{
+        border:2px solid black;
+    }
+    th,td{
+        border:2px solid black;
+    }
+</style>
+<body>
+    <header class="heading">
+        <h1>Registration form</h1>
+    </header>
+
+    <form>
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter you full name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="phoneno">Phone no:</label>
+            <input type="tel" id="phoneno" placeholder="enter your phone no." required>
+        </div>
+        <div>
+            <label for="role">select one:</label>
+            <select id="role">
+                <option value="student">student</option>
+                <option value="working">working</option>
+            </select>
+        </div>
+        <button type="submit" id="submit">submit</button>
+    </form>
+
+    <table id="schedule">
+        <thead>
+            <tr>
+                <th>breakfast</th>
+                <th>lunch</th>
+                <th>dinner</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>milk with cereals</td>
+                <td>dal roti sabzi</td>
+                <td>idli sambhar</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
